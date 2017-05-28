@@ -1,14 +1,14 @@
-import { MathPracticeAngularPage } from './app.po';
+import { MathPracticeAngularPage } from "./app.po";
 
-describe('math-practice-angular App', () => {
+describe("math-practice-angular App", () => {
   let page: MathPracticeAngularPage;
 
   beforeEach(() => {
     page = new MathPracticeAngularPage();
   });
 
-  it('should display message saying app works', () => {
+  it("should display message saying app works", () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual("app works!");
   });
 });
