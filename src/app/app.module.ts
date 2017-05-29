@@ -10,6 +10,8 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
 import "hammerjs";
+import { RandomIntegerServiceService } from "./random-integer-service.service";
+import { MathProblemServiceService } from "./math-problem-service.service";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,7 @@ import "hammerjs";
     MaterialModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [RandomIntegerServiceService, MathProblemServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
