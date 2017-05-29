@@ -10,12 +10,14 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
 import "hammerjs";
-import { RandomIntegerServiceService } from "./random-integer-service.service";
-import { MathProblemServiceService } from "./math-problem-service.service";
+import { RandomIntegerService } from "./random-integer.service";
+import { MathProblemService } from "./math-problem.service";
+import { MathProblemComponent } from "./math-problem/math-problem.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MathProblemComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,7 @@ import { MathProblemServiceService } from "./math-problem-service.service";
     MaterialModule,
     AppRoutingModule
   ],
-  providers: [RandomIntegerServiceService, MathProblemServiceService],
+  providers: [RandomIntegerService, MathProblemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
