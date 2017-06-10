@@ -18,4 +18,13 @@ export class MathProblem {
                 throw new Error("Unknown MathOperation. Can't provide results for this MathOperation yet.");
         }
     }
+
+    getOperationSymbol(): string {
+        switch(this.operation) {
+            case MathOperation.Multiplication:
+                return "x";
+            default:
+                throw new Error("Unknown MathOperation. Can't provide symbol for this MathOperation yet.");
+        }
+    }
 }

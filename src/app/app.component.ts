@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   // Allow skip and loop back around
   // Have a MathProblemComponent to render the problem
 
-  title = "app works!";
+  title = "Math Problem";
 
   ngOnInit(): void {
     this.currentProblem = new MathProblem(MathOperation.Multiplication, 1, 2);

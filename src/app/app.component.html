@@ -2,8 +2,17 @@
   {{title}}
 </h1>
 <app-math-problem [mathProblem]="currentProblem"></app-math-problem>
-<button md-raised-button>
-  Angular Material works!
-  <md-icon>done</md-icon>
-</button>
+<md-input-container>
+  <input [(ngModel)]="currentProblem.providedResponse" type="number" mdInput placeholder="Enter answer">
+</md-input-container>
+<p>
+  <button md-raised-button>
+    Answer
+    <!--<md-icon>done</md-icon>-->
+  </button>
+  <button md-raised-button>
+    Skip
+    <!--<md-icon>done</md-icon>-->
+  </button>
+</p>
 <router-outlet></router-outlet>
